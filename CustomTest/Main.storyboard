@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="3" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="60" y="85" width="512" height="433"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="60" y="85" width="825" height="614"/>
+                                </variation>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="6" translatesAutoresizingMaskIntoConstraints="NO" alpha="0.4">
+                                <rect key="frame" x="110" y="181" width="240" height="240"/>
+                                <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <rect key="frame" x="531" y="381" width="240" height="240"/>
+                                    <mask key="constraints">
+                                        <include reference="15"/>
+                                        <include reference="16"/>
+                                    </mask>
+                                    <mask key="subviews">
+                                        <include reference="40"/>
+                                        <include reference="39"/>
+                                    </mask>
+                                </variation>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="40" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                        <rect key="frame" x="502" y="221" width="240" height="240"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="0.0" y="109" width="240" height="49"/>
+                                        </variation>
+                                    </view>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="39" translatesAutoresizingMaskIntoConstraints="NO" text="Text" fixedFrame="YES">
+                                        <rect key="frame" x="44" y="57" width="97" height="30"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="51" y="42" width="97" height="30"/>
+                                        </variation>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint id="15" firstAttribute="width" constant="240"/>
+                                    <constraint id="16" firstAttribute="height" constant="240"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="15"/>
+                                        <exclude reference="16"/>
+                                    </mask>
+                                    <mask key="subviews">
+                                        <exclude reference="40"/>
+                                        <exclude reference="39"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="44" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="190" y="585" width="138" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="6"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="13"/>
+                                <exclude reference="14"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="6"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="13"/>
+                                <include reference="14"/>
+                            </mask>
+                        </variation>
+                        <constraints>
+                            <constraint id="13" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="6" secondAttribute="trailing" constant="253"/>
+                            <constraint id="14" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="6" secondAttribute="bottom" constant="147"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="iPad"/>
+        <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
+    </simulatedMetricsContainer>
+</document>
